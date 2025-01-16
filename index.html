@@ -1,7 +1,9 @@
 、<!DOCTYPE html>
 <html lang="zh-CN">
 	<head>
-		<title>Benefit Appeal in Live Streaming: The Moderating Role of Influencers’ Beauty and Body Motion Magnitude 
+		<title>Benefit Appeals in Livestreaming E-commerce: 
+			The Moderating Role of Influencers’ Beauty and Body Motion 
+			
 
 </title>
 		<meta name="description" content="">
@@ -66,8 +68,8 @@
 		</style>
 
 		<div class="large-title">
-			<p class="" style="font-size:2rem;text-align: center;">Benefit Appeal in Live Streaming:</p>	
-			<p  style="text-align: center;"> The Moderating Role of Influencers’ Beauty and Body Motion Magnitude </p>
+			<p class="" style="font-size:2rem;text-align: center;">Benefit Appeals in Livestreaming E-commerce:</p>	
+			<p  style="text-align: center;"> 	The Moderating Role of Influencers’ Beauty and Body Motion  </p>
 
 			</div>
 
@@ -84,8 +86,7 @@
 	<div class="uk-container uk-container-center container">
 	
 		<div class="medium-title">
-				<p>Benefit appeal is one of the most commonly used advertising tactics for improving consumer response. However, in live-streaming shopping, which featured the new multimedia, real-time, and entertainment nature, how benefit appeals work has not yet been confirmed. To address this question, this article developed a three-step empirical research with 10,971 live-stream videos and machine-learning methods. Study 1 employed interpretable machine learning methods, using a predictive framework to analyze the importance of benefit appeals on sales. Study 2 utilized propensity score matching (PSM) to explore the quasi-causal relationship between benefit appeals and sales. Results demonstrated that benefit appeals significantly enhance sales, with influencers’ facial beauty and body motion amplifying this effect as mediators. Study 3 confirmed these findings through experimental validation, ensuring the reliability and validity of the causal relationship between benefit appeals and sales. Thus, this empirical multimodal study enriches the literature on benefit appeals in the context of multimedia live-streaming shopping.
- 
+				<p>Benefit appeals represent a commonly used advertising tactic for improving customer response. However, the effectiveness of benefit appeals in the context of multimedia livestreaming e-commerce remains unverified. To address this issue, we developed a multistudy framework that employs 10,971 livestreaming video clips and TikTok sales data. In Study 1, to preliminarily establish the correlation between benefit appeals and sales, we conducted exploratory research leveraging interpretable machine learning. In Study 2, to examine quasi-causality, we conducted an econometric analysis utilizing propensity score matching (PSM). The results demonstrate that benefit appeals significantly increase sales, with the influencer’s facial beauty and body motion amplifying this effect. In Study 3, to provide causal evidence, we launched two randomized online experiments. The experimental results corroborate the findings of Study 2 again and reveal the mediating role of increasing customer engagement from a psychological perspective. Our study is among the first to quantify influencers’ verbal (benefit appeals) and nonverbal cues (beauty and body motion) via machine learning and to examine their sales effects in real-world business, enriching the literature on benefit appeals in the context of multimedia livestreaming e-commerce.
 
 				</p>
 			</div>
@@ -112,9 +113,7 @@
 				</style>
 				<h3 id="1" style="font-size:1.5rem">1. Multimedia Data Processing:
 				</h3>
-				<div class="video">
-					<!-- <iframe height="" width="100%" src="https://player.bilibili.com/player.html?bvid=BV1vd4y1B74h&page=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> -->
-		        </div>
+				 
 				</div>
  
 				<style>
@@ -126,10 +125,9 @@
 				<h3 id="2"  style="font-size:1.2rem">1.1 Flow Chart of Multimedia Data Processing
 				</h3>
 
-				<div class="sub_title">
+				<div class="content">
 					<p>
-						In this research, we collected structured and unstructured data from live-streaming videos and extracted the “benefit index” and influencers’ beauty and body motion for the analysis in study 1 and study 2. The flow chart of multimedia data processing is shown below. 
-
+						In this research, we derive unstructured video data and corresponding structured e-commerce data from TikTok. Machine learning techniques (computer vision and natural language processing) automatically extract verbal and nonverbal variables. Then, the extracted variables are taken as inputs for interpretable machine learning, XGBoost, and SHAP.
 					</p>
 				</div>
 
@@ -138,7 +136,7 @@
 					<div style="max-width: 800px;margin:auto">
 
 						
-						<a class="uk-text-center" style="display: block;" href="media/Figure1-new.png" data-caption=""><img src="media/Figure1-new.png" alt=""></a>
+						<a class="uk-text-center" style="display: block;" href="media/Figure 1.png" data-caption=""><img src="media/Figure 1.png" alt=""></a>
 				
 
 						<div class="info uk-margin-medium">
@@ -157,11 +155,11 @@
 				        font-weight: bold;
 				    }
 				</style>
-				<h3 id="3" style="font-size:1.2rem">1.2 Example of beauty score detection API provided by Face++ 
+				<h3 id="3" style="font-size:1.2rem">1.2 The Measurement of Beauty
 				</h3>
-				<div class="sub_title">
+				<div class="content">
 					<p>
-						The evaluation of influencer's beauty is conducted through a beauty score detection API from Face++. This tool utilizes 83 detailed facial landmarks to accurately delineate the face's contours, such as those of the eyes, eyebrows, lips, and nose. Leveraging these landmarks, Face++ predicts the beauty score. Figure 2 show the facial landmarks and Face++'s beauty score detection interface. ​
+						Influencers’ beauty is detected by the beauty score detection API provided by Face++.  Utilizing 83 facial landmarks that mark the outline of the face, eye, eyebrow, lip, and nose contour, Face++ outputs beauty scores automatically. Figure 2 displays an example of facial landmarks and beauty score detection interface on Face++. 
 					</p>
 				</div>
 				<div class="uk-grid-small" uk-grid>
@@ -170,7 +168,7 @@
 
 						<a class="uk-text-center" style="display: block;" href="media/Figure2-add.png" data-caption=""><img src="media/Figure2-add.png" alt=""></a>
 						<div class="info uk-margin-medium">
-							<p class="uk-text-center"><strong>Figure 2.</strong>  Example of facial landmarks and beauty score in Face++ 	</p>
+							<p class="uk-text-center"><strong>Figure 2.</strong>  Beauty Score Detection Interface 	</p>
 						</div>
 					</div>
 					
@@ -182,12 +180,11 @@
 				        font-weight: bold;
 				    }
 				</style>
-				<h3 id="3" style="font-size:1.2rem">1.3 Example of dense optical flow algorithm
+				<h3 id="3" style="font-size:1.2rem">1.3 The Measurement of Body Motion 
 				</h3>
-				<div class="sub_title">
+				<div class="content">
 					<p>
-						The body motion magnitude is obtained through the dense optical flow algorithm. By analyzing two adjacent frames of a live-streaming video, this algorithm locates the influencer’s body position and captures the vector of body movement (see Figure 3). Video 1 demonstrates an example of dense optical flow, with the intensity of the red lines on the right indicating the magnitude of the influencer’s body motion.
-
+						The body motion is obtained through the dense optical flow algorithm. By analyzing two adjacent frames of a live streaming video, this algorithm computes a displacement vector for each pixel in the image, generating an optical flow map (see Figure 3). Video 1 demonstrates an example of dense optical flow, with the intensity of the red areas on the right indicating the magnitude of the influencer’s body motion.
 					</p>
 				</div>
 				<div class="uk-grid-small" uk-grid>
@@ -197,7 +194,7 @@
 				
 						
 						<div class="info uk-margin-medium">
-							<p class="uk-text-center"><strong>Figure 3.</strong>  Dense optical flow algorithm illustration
+							<p class="uk-text-center"><strong>Figure 3.</strong>  The Measurement of Body Motion 
 
 	
 							</p>
@@ -209,7 +206,7 @@
 						<div class="info uk-margin-medium">
 							<p class="uk-text-center">
 								
-								<strong>Video 1.</strong> Example of dense optical flow
+								<strong>Video 1.</strong> Example of Body Motion Measurement
 	
 							</p>
 						</div>
@@ -224,44 +221,46 @@
 				    }</style>
 				<h3 id="4"  style="font-size: 1.5rem;">2. Interpretable Machine Learning 
 				</h3>
-				<div class="sub_title">
+				<div class="content">
 					<p>
-						Interpretable Machine learning methods, eXtreme Gradient Boosting (XGBoost) and SHapley Additive exPlanations (SHAP) were applied to explore the absolute impact and relative impact of the independent variables on sales amount. 
+						Interpretable Machine learning methods, eXtreme Gradient Boosting (XGBoost) and SHapley Additive exPlanations (SHAP) were applied to explore the the importance, effect, and interactions of variables. 
 
 					</p>
 				</div>
 				<div class="uk-grid-small" uk-grid>
 					<div class="uk-width-1-1" uk-lightbox="animation: slide">
 					<div style="max-width: 800px;margin:auto">
-						<a class="uk-text-center" style="display: block;" href="media/Figure-3.webp" data-caption=""><img src="media/Figure-3.webp" alt=""></a >
+						<a class="uk-text-center" style="display: block;" href="media/Figure 4.png" data-caption=""><img src="media/Figure 4.png" alt=""></a >
 					
 						<div class="info uk-margin-medium">
 							<p class="uk-text-center">
-								<strong>Figure 4.</strong>  Density scatter plots of the individual SHAP values (relative impact)
+								<strong>Figure 4.</strong> Density scatter plots of the SHAP values
 
 							</p>
 						</div>
 
-
-						<a class="uk-text-center" style="display: block;" href="media/Figure 4.jpg" data-caption=""><img src="media/Figure 4.jpg" alt=""></a>
+						<div class="uk-grid-small" uk-grid>
+							<div class="uk-width-1-1" uk-lightbox="animation: slide">
+							<div style="max-width: 800px;margin:auto">
+								<a class="uk-text-center" style="display: block;" href="media/Figure 5.png" data-caption=""><img src="media/Figure 5.png" alt=""></a >
+							
+								<div class="info uk-margin-medium">
+									<p class="uk-text-center">
+										<strong>Figure 5.</strong> SHAP Interaction Plot
+		
+									</p>
+								</div>
+				
 					
-						<div class="info uk-margin-medium">
-							<p class="uk-text-center">		
-								<strong>Figure 5.</strong>   The mean SHAP value (absolute impact)
-							</p>
-						</div>
-					</div>
-					
-				</div>
-				</div>	
+	
 
 				<!-- 333 -->
 				<h3 id="4"  style="font-size: 1.5rem;">3. Experimental Stimuli in Study 3
 
 				</h3>
-				<div class="sub_title">
+				<div class="content">
 					<p>
-						In Study 3, two 2x2 experiments, study3a and study3b, were conducted to test the causality effect. We display the transcript stimuli of benefit appeal, beauty, and body motion magnitude in the following sections. 
+						In Study 3, two 2x2 experiments, study3a and study3b, were conducted to test the causality effect. We display the transcript stimuli of benefit appeal, beauty, and Body motion in the following sections. 
 
 
 					</p>
@@ -273,7 +272,7 @@
 				<h3 id="4" style="font-size: 1.2rem;">3.1 Benefit appeals in influencer’s transcript stimuli
 
 				</h3>
-				<div class="sub_title">
+				<div class="content">
 					<p>
 						To create different extents of using benefit appeal (high-benefit versus low-benefit), we constructed a pair of live streaming transcripts emphasizing benefit appeal (high-benefit) and using fewer benefit appeals (low-benefit) respectively. The content emphasizing benefit appeal in the high-benefit group is marked in blue.
 
@@ -309,9 +308,9 @@
 				<h3 id="4" style="font-size: 1.2rem;">3.2 Beauty of the influencer in picture stimuli
 
 				</h3>
-				<div class="sub_title">
+				<div class="content">
 					<p>
-						To manipulate the beauty of the influencer and control other factors, makeup, and video beautification techniques are applied to the face of the same influencer. The portraits of the influencer in high and low condition are shown in Figure 6.
+						To manipulate the beauty of the influencer, makeup and beautification techniques were applied to the face of the same influencer. The portraits of the influencer in high-beauty condition and low-beauty condition are shown in Figure 6.
 					</p>
 				</div>
 				<div class="uk-grid-small" uk-grid uk-height-match>
@@ -329,192 +328,163 @@
 				<!-- 32 -->
 
 <!-- 334 -->
+<head>
+    <style>
+        .sub_title p {
+            color: black;
+            font-weight: bold;
+            margin: 10px 0; /* 控制段前段后的间距 */
+            font-size: 18px; /* 字体大小 */
+            text-align: left;
+        }
 
-<style>
-	.info{     margin: 40px 0;}
-	.info h3{ font-weight: 800;}
-	.info .item{}
-	.info .item span{}
-	.info .item strong{ font-weight: normal;font-style: italic;}
-	.info{}
-	.info{}
-	.info{}
-	.info{}
-	.uk-width-1-2{
-		width: 40%;
-	}
-	@media screen and (max-width: 768px) {
-		.large-title{
-	
-   }
-   .large-title p:nth-child(1){
-	font-size: 26px!important;
-	
-}
-.large-title p:nth-child(2){
-	font-size: 20px!important;
-}
-.mobile{
-	flex-direction: column;
-}
+        .content p {
+            color: #333;
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 10px 0;
+            text-align: justify;
+        }
 
-.uk-width-1-2 {
-    width: 100%!important;
-}
-.container{
-	margin: 0!important;
-}
-}
+        .info h5 {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
 
-</style>
+        .info .item span {
+            font-size: 14px;
+            color: #555;
+        }
 
+        .info .item strong {
+            font-size: 14px;
+            color: #000;
+        }
 
-<h3 id="4" style="font-size: 1.2rem;">3.3 Body motion magnitude of the influencer in video stimuli 
+        .video2 {
+            margin-top: 10px;
+        }
+    </style>
+</head>
 
-
-</h3>
-<div class="sub_title">
-	<p>
-		To manipulate the body motion magnitude of the influencer, we asked the influencer to behave in different magnitudes (high-magnitude versus low-magnitude) of body motion when she recorded the live streaming videos. The 4 videos (high-benefit × low-magnitude, high-benefit × high-magnitude, low-benefit × low-magnitude, and low-benefit × high-magnitude) are shown as blow.
-
-
-	</p>
+<!-- 全局内容说明 -->
+<h3 id="4" style="font-size: 1.2rem;">3.3 Body motion of the influencer in video stimuli</h3>
+<div class="content">
+    <p>
+        To manipulate the influencer’s body motion, we asked the influencer to behave in different magnitudes of body motion (high-body motion versus low-body motion). We originally recorded four videos in Chinese (high-benefit × low-body motion, high-benefit × high-body motion, low-benefit × low-body motion, and low-benefit × high-body motion). These four videos have been converted into English versions. All eight Chinese and English videos are shown below:
+    </p>
 </div>
-<div class="uk-grid-small mobile" uk-grid uk-height-match style="justify-content: space-between; align-items: center; flex-wrap: nowrap;">
-					
 
 
+<div class="sub_title">
+    <p>(1) Chinese Version</p>
+</div>
 
-	<div class=" uk-width-1-2" >
-		<div class="info">
-			<h3>Group1
-			</h3>
-			<div class="item">
-				<span>
-					Benefit appeal: 
-				</span>
-				<strong>
-					high
-				</strong>
-			</div>
-			<div class="item">
-				<span>
-					Body motion magnitude: 
-				</span>
-				<strong>
-					low
-				</strong>
-			</div>
- 
+<div class="uk-grid-small mobile" uk-grid uk-height-match style="justify-content: space-between; align-items: center; flex-wrap: wrap;">
+    <!-- Group 1 -->
+    <div class="uk-width-1-2">
+        <div class="info">
+            <h5>Group1</h5>
+            <div class="item"><span>Benefit appeal: </span><strong>high</strong></div>
+            <div class="item"><span>Body motion: </span><strong>high</strong></div>
+        </div>
+        <div class="video2">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/MMwH_rDPu6U" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
 
-		</div>
-		<div class="video2">
-			<!-- &autoplay=0 -->
-			<iframe width="100%" src="//player.bilibili.com/player.html?aid=1051183509&bvid=BV1oH4y177cF&cid=1452772796&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-		</div>
-	</div>
-	<div class=" uk-width-1-2" uk-lightbox="animation: slide ">
-		<div class="info">
-			<h3>Group2
-			</h3>
-			<div class="item">
-				<span>
-					Benefit appeal: 
-				</span>
-				<strong>
-					high
-				</strong>
-			</div>
-			<div class="item">
-				<span>
-					Body motion magnitude: 
-				</span>
-				<strong>
-					high
-				</strong>
-			</div>
-		</div>
-		<div class="video2">
-			<iframe src="//player.bilibili.com/player.html?aid=1501226664&bvid=BV1FS421P7FX&cid=1452772798&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-		</div>
-	</div>
+    <!-- Group 2 -->
+    <div class="uk-width-1-2">
+        <div class="info">
+            <h5>Group2</h5>
+            <div class="item"><span>Benefit appeal: </span><strong>high</strong></div>
+            <div class="item"><span>Body motion: </span><strong>low</strong></div>
+        </div>
+        <div class="video2">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/INZaURAY5tk" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
 
+    <!-- Group 3 -->
+    <div class="uk-width-1-2">
+        <div class="info">
+            <h5>Group3</h5>
+            <div class="item"><span>Benefit appeal: </span><strong>low</strong></div>
+            <div class="item"><span>Body motion: </span><strong>high</strong></div>
+        </div>
+        <div class="video2">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/fh-HDuyngcQ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
 
+    <!-- Group 4 -->
+    <div class="uk-width-1-2">
+        <div class="info">
+            <h5>Group4</h5>
+            <div class="item"><span>Benefit appeal: </span><strong>low</strong></div>
+            <div class="item"><span>Body motion: </span><strong>low</strong></div>
+        </div>
+        <div class="video2">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/7ASHjnd0qK8" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
 
-	</div>
+<div class="sub_title">
+    <p>(2) English Version</p>
+</div>
 
+<div class="uk-grid-small mobile" uk-grid uk-height-match style="justify-content: space-between; align-items: center; flex-wrap: wrap;">
+    <!-- Group 1 -->
+    <div class="uk-width-1-2">
+        <div class="info">
+            <h5>Group1</h5>
+            <div class="item"><span>Benefit appeal: </span><strong>high</strong></div>
+            <div class="item"><span>Body motion: </span><strong>high</strong></div>
+        </div>
+        <div class="video2">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/LBa15Ry2q4Y" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
 
+    <!-- Group 2 -->
+    <div class="uk-width-1-2">
+        <div class="info">
+            <h5>Group2</h5>
+            <div class="item"><span>Benefit appeal: </span><strong>high</strong></div>
+            <div class="item"><span>Body motion: </span><strong>low</strong></div>
+        </div>
+        <div class="video2">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/WYEzo3aEStY" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
 
-	<div class="uk-grid-small mobile" uk-grid uk-height-match style="justify-content: space-between; align-items: center; flex-wrap: nowrap;">
-					
+    <!-- Group 3 -->
+    <div class="uk-width-1-2">
+        <div class="info">
+            <h5>Group3</h5>
+            <div class="item"><span>Benefit appeal: </span><strong>low</strong></div>
+            <div class="item"><span>Body motion: </span><strong>high</strong></div>
+        </div>
+        <div class="video2">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/nUxkKl3tj_I" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
 
+    <!-- Group 4 -->
+    <div class="uk-width-1-2">
+        <div class="info">
+            <h5>Group4</h5>
+            <div class="item"><span>Benefit appeal: </span><strong>low</strong></div>
+            <div class="item"><span>Body motion: </span><strong>low</strong></div>
+        </div>
+        <div class="video2">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/LBTfhzMN6DY" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
 
-
-		<div class=" uk-width-1-2" >
-			<div class="info">
-				<h3>Group3
-				</h3>
-				<div class="item">
-					<span>
-						Benefit appeal: 
-					</span>
-					<strong>
-						low
-					</strong>
-				</div>
-				<div class="item">
-					<span>
-						Body motion magnitude: 
-					</span>
-					<strong>
-						low
-					</strong>
-				</div>
-
-			</div>
-			<div class="video2">
-				<!-- &autoplay=0 -->
-				<iframe src="//player.bilibili.com/player.html?aid=1651184006&bvid=BV1Tj421D7Fx&cid=1452772800&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-			</div>
-		</div>
-		<div class=" uk-width-1-2" uk-lightbox="animation: slide ">
-			<div class="info">
-				<h3>Group4
-				</h3>
-				<div class="item">
-					<span>
-						Benefit appeal: 
-					</span>
-					<strong>
-						low
-					</strong>
-				</div>
-				<div class="item">
-					<span>
-						Body motion magnitude: 
-					</span>
-					<strong>
-						high
-					</strong>
-				</div>
-
-			</div>
-			<div class="video2">
-				<iframe src="//player.bilibili.com/player.html?aid=1251229179&bvid=BV1vJ4m1a7SS&cid=1452773011&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-			</div>
-		</div>
-
-
-
-		</div>
-<!-- 334 -->
-
-				 
-				 
-
-			 
-		
-			  
 
 
 <a href="" uk-totop class="totop" uk-scroll><span uk-icon="top"></span></a>
